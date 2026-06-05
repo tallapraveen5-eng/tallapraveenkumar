@@ -1,68 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Praveenkumar Talla | Clinical Insights Analyst</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Praveenkumar Talla</title>
 
 <style>
+/* GLOBAL */
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, sans-serif;
-  line-height: 1.6;
+  font-family: 'Segoe UI', sans-serif;
   background: #0f172a;
   color: #e2e8f0;
 }
 
-header {
-  background: linear-gradient(135deg, #1e293b, #334155);
-  padding: 60px 20px;
+/* NAVBAR */
+nav {
+  position: sticky;
+  top: 0;
+  background: rgba(15, 23, 42, 0.9);
+  padding: 15px;
   text-align: center;
 }
 
-header h1 {
-  font-size: 42px;
-  margin: 0;
-}
-
-header p {
-  font-size: 18px;
+nav a {
   color: #94a3b8;
+  margin: 0 15px;
+  text-decoration: none;
 }
 
+/* HERO SECTION */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #1e293b, #334155);
+}
+
+.hero img {
+  width: 140px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  margin: 10px 0;
+  font-size: 42px;
+}
+
+.hero p {
+  color: #cbd5f5;
+}
+
+/* SECTION */
 .container {
   width: 85%;
   margin: auto;
-  padding: 40px 0;
-}
-
-section {
-  margin-bottom: 60px;
+  padding: 50px 0;
 }
 
 h2 {
-  color: #38bdf8;
   border-bottom: 2px solid #334155;
   padding-bottom: 5px;
+  color: #38bdf8;
 }
 
+/* CARDS */
 .card {
-  background: #1e293b;
-  padding: 20px;
-  border-radius: 12px;
+  background: rgba(30, 41, 59, 0.6);
+  padding: 25px;
   margin-top: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s;
 }
 
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* SKILLS */
 .skills span {
   display: inline-block;
   background: #334155;
-  padding: 8px 12px;
+  padding: 10px;
   margin: 5px;
   border-radius: 8px;
-  font-size: 14px;
 }
 
+/* BUTTON */
+.button {
+  display: inline-block;
+  padding: 12px 20px;
+  margin-top: 10px;
+  color: white;
+  background: #38bdf8;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+/* FOOTER */
 footer {
   text-align: center;
   padding: 20px;
@@ -74,135 +110,50 @@ footer {
 
 <body>
 
-<header>
+<!-- NAVBAR -->
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <img src="profile.jpg" alt="Profile Photo">
   <h1>Praveenkumar Talla</h1>
-  <p>Senior Clinical Insights Analyst | Clinical Data & Analytics Professional</p>
-  <p>12+ Years Experience • Hyderabad, India</p>
-</header>
+  <p>Senior Clinical Insights Analyst</p>
+  <p>Clinical Data | Databricks | Python | Spotfire</p>
+
+  <a href="Praveenkumar_Talla_Resume.pdf" class="button">Download Resume</a>
+</section>
 
 <div class="container">
 
 <!-- ABOUT -->
-<section>
-  <h2>About Me</h2>
+<section id="about">
+  <h2>About</h2>
   <div class="card">
     <p>
-      Results-driven Clinical Data & Analytics Professional with over 12 years of experience
-      in clinical insights, analytics, and visualization across pharma and CRO environments.
-      I specialize in Databricks, Python, SQL, and TIBCO Spotfire to build scalable analytical
-      pipelines supporting clinical trials.
+      Senior Clinical Insights Analyst with 12+ years of experience in clinical data analytics,
+      visualization, and pipeline development across pharmaceutical organizations.
     </p>
     <p>
-      With dual master’s degrees in Computer Science and Pharmaceutics, I bridge the gap
-      between advanced analytics and clinical domain expertise.
+      Specialized in Databricks, Python, SQL, and Spotfire to deliver actionable insights
+      supporting clinical trials and regulatory decision-making.
     </p>
   </div>
 </section>
 
 <!-- SKILLS -->
-<section>
-  <h2>Core Skills</h2>
+<section id="skills">
+  <h2>Skills</h2>
   <div class="card skills">
-    <span>Clinical Data Analytics</span>
-    <span>Databricks & PySpark</span>
-    <span>Python (Pandas, Plotly)</span>
-    <span>SQL & Oracle DB</span>
-    <span>TIBCO Spotfire</span>
-    <span>SDTM / ADaM</span>
-    <span>Data Visualization</span>
-    <span>Automation & Pipelines</span>
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section>
-  <h2>Professional Experience</h2>
-
-  <div class="card">
-    <h3>Senior Clinical Insights Analyst</h3>
-    <p><strong>Cytel Inc. | Client: Johnson & Johnson</strong> (Oct 2024 – Present)</p>
-    <ul>
-      <li>Built end-to-end clinical analytics pipelines using Databricks</li>
-      <li>Developed dashboards using Python & Spotfire</li>
-      <li>Delivered insights for safety evaluation and medical review</li>
-      <li>Ensured SDTM/ADaM compliance and audit-ready workflows</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h3>Senior Clinical Programmer</h3>
-    <p><strong>Syneos Health</strong> (Aug 2020 – Sep 2024)</p>
-    <ul>
-      <li>Designed advanced Spotfire dashboards</li>
-      <li>Automated reports using IronPython & Automation Services</li>
-      <li>Optimized performance and standardized reporting frameworks</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h3>Clinical Data Analyst II</h3>
-    <p><strong>Infospan Inc. | Janssen R&D</strong> (2017 – 2019)</p>
-    <ul>
-      <li>Developed clinical visualizations and SDTM dataset mapping</li>
-      <li>Supported medical review workflows</li>
-    </ul>
-  </div>
-
-</section>
-
-<!-- PROJECTS / IMPACT -->
-<section>
-  <h2>Key Contributions</h2>
-  <div class="card">
-    <ul>
-      <li>Automated clinical workflows reducing reporting cycle time</li>
-      <li>Standardized dashboards across multiple study teams</li>
-      <li>Improved data quality and traceability in clinical pipelines</li>
-      <li>Mentored junior analysts on analytics platforms</li>
-    </ul>
-  </div>
-</section>
-
-<!-- EDUCATION -->
-<section>
-  <h2>Education</h2>
-  <div class="card">
-    <p>🎓 Master of Science, Computer Science – USA</p>
-    <p>🎓 Master of Pharmacy (MPharmacy) – JNTU Hyderabad</p>
-  </div>
-</section>
-
-<!-- CERTIFICATIONS -->
-<section>
-  <h2>Certifications</h2>
-  <div class="card">
-    <ul>
-      <li>TIBCO Certified Associate – Spotfire</li>
-      <li>TIBCO Certified Professional – Spotfire</li>
-      <li>Databricks Data Engineer Training</li>
-      <li>Python for Data Engineering</li>
-    </ul>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section>
-  <h2>Contact</h2>
-  <a href="Praveenkumar_Talla_Resume.pdf" download style="color:#38bdf8;">
-  Download Resume
-</a>
-  <div class="card">
-    <p>Email: praveentalla0@gmail.com</p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/praveenkumar-t-b14a58121/" style="color:#38bdf8;">View Profile</a></p>
-
-  </div>
-</section>
-
-</div>
-
-<footer>
-  <p>© 2026 Praveenkumar Talla | Portfolio</p>
-</footer>
-
-</body>
-</html>
+    <span>Databricks</span>
+    <span>Python</span>
+    <span>PySpark</span>
+    <span>SQL</span>
+    <span>Spotfire</span>
+    <span>SDTM/ADaM</span>
+    <span>Clinical Analytics</span>
